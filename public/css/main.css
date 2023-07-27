@@ -5,9 +5,9 @@
     font-family: 'nunito', sans-serif;
 }
 
-body {
+.container-1 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: #191919;
     background-image: url('../img/Design sem nome.png');
     background-size: cover;
@@ -65,4 +65,52 @@ body {
 .meu-nome h3 {
     color: #ffffff;
     font-size: 1.5rem;
+}
+
+.container-2 main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    padding: 60px 15%;
+    background-color: #000000;
+}
+
+.container-2 main figure {
+    margin-right: 30px;
+}
+
+.container-2 main figure img {
+    height: 62vh;
+    border-radius: 100%;
+    border: 2px solid #f9004d;
+}
+
+.container-2 main section h2 {
+    color: #ffffff;
+    font-size: 4.7rem;   
+}
+
+.container-2 main section p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.container-2 main section button {
+    background-color: #f9004d;
+    color: #ffffff;
+    font-size: 1.1rem;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+.container-2 main section button:hover {
+    background-color: #000000;
+    border: 3px solid #f9004d;
+    transition: 0.2s;
 }
