@@ -1,10 +1,68 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'nunito', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #191919;
+    background-image: url('../img/Design sem nome.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #f9004d;
+}
+
+.nav-header ul li {
+    display: inline-block;
+    color: #ffffff;
+    list-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.nav-header ul li:hover {
+    color: #f9004d;
+    transition: 0.5s;
+}
+
+.meu-nome{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+.meu-nome h1 {
+    color: #ffffff;
+    font-size: 4.7rem;
+}
+
+.meu-nome h1 span {
+    color: #f9004d;
+}
+
+.meu-nome h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
 }
