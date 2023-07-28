@@ -103,18 +103,20 @@
     margin-bottom: 60px;
 }
 
-.container-2 section button {
+.container-2 section a {
     background-color: #f9004d;
     color: #ffffff;
     font-size: 1.1rem;
     width: 180px;
     height: 50px;
+    padding: 15px;
     border: none;
     border-radius: 26px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.container-2 section button:hover {
+.container-2 section a:hover {
     background-color: #000000;
     border: 3px solid #f9004d;
     transition: 0.2s;
