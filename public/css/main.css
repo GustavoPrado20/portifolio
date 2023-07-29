@@ -16,9 +16,9 @@
     background-position: center;
 }
 
-.nav-header {
+header {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
@@ -33,6 +33,20 @@
 
 .logo span {
     color: #f9004d;
+}
+
+.nav-header {
+    display: flex;
+    gap: .5rem;
+}
+
+#btn-nav {
+    display: none;
+}
+
+.nav-header ul {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .nav-header ul li {
@@ -145,6 +159,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 35px;
 }
 
 .card figure img {
@@ -180,9 +195,10 @@
 }
 
 .card-projeto {
-    display: flex;
+    display: grid;
+    grid-template-columns: 335px 335px;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 footer {
@@ -234,3 +250,188 @@ footer p {
     transition: 0.5s;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .container-1 {
+        background-image: url('../img/Programming-amico.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 57vh;
+        background-position-y: 30vh;
+    }
+
+    .meu-nome {
+        top: 15%;
+        left: 17%;
+    }
+
+    .meu-nome h3 {
+        text-align: center;
+    }
+
+    .container-2 section h2, .container-2 section p {
+        text-align: center;
+    }
+
+    .container-2 section a{
+        margin-left: 15%;
+    }
+
+    .container-2 figure {
+        margin-left: -50px;
+    }
+
+    .container-2 figure img {
+        height: 30vh;
+    }
+
+    .card-projeto {
+        display: grid;
+        grid-template-columns: 335px 335px;
+        margin-top: 60px;
+    }
+
+    .card {
+        margin-top: 35px;
+    }
+
+    footer {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #btn-nav {
+        display: block;
+    }
+
+    #Menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        transition: 0.6s;
+        background-color: #191919;
+        z-index: 1000;
+        visibility: hidden;
+        height: 0px;    
+        overflow-y: hidden;
+    }
+
+    #Menu li {
+        display: block;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    #nav.active #Menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #btn-nav {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        color: #ffffff;
+        border-top: 2px solid;
+        width: 20px;
+      }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .container-1 {
+        background-image: url('../img/Programming-amico.png');
+        background-size: 43vh;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center;
+        background-position-y: 45vh;
+    }
+
+    .meu-nome {
+        top: 15%;
+        left: 0%;
+    }
+
+    .meu-nome h3, .meu-nome h1 {
+        text-align: center;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-2 section h2, .container-2 section p {
+        text-align: center;
+    }
+
+    .container-2 section a{
+        margin-left: 18%;
+    }
+
+    .container-2 figure {
+        display: none;
+    }
+
+    .card-projeto {
+        display: grid;
+        grid-template-columns: 335px;
+        margin-top: 60px;
+    }
+
+    .card {
+        margin-top: 35px;
+    }
+
+    footer {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .social a {
+        height: 29px;
+        width: 29px;
+    }
+}

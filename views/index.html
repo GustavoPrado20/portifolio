@@ -15,15 +15,18 @@
     
     <body>
         <section class="container-1" id="home">
-            <header>
-                <nav class="nav-header">
-                    <h2 class="logo">Portifo<span>lio</span></h2>
+            <header id="header">
+                <h2 class="logo">Portifo<span>lio</span></h2>
 
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                <nav class="nav-header" id="nav">
+                    <button id="btn-nav" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul id="Menu" role="Menu">
+                        <li><a href="#home" id="btn-menu1">Home</a></li>
+                        <li><a href="#sobre" id="btn-menu2">Sobre</a></li>
+                        <li><a href="#projetos" id="btn-menu3">Projetos</a></li>
+                        <li><a href="#contato" id="btn-menu4">Contato</a></li>
                     </ul>
                 </nav>
             </header>
@@ -90,5 +93,7 @@
                 <a href="https://wa.me/qr/6OUX2RG2CQUGF1" target="_blank"><img src="../public/img/whatsapp-logo-112413FAA7-seeklogo.com.png" alt="telefone"></a>
             </section>
         </footer>
+
+        <script type="text/Javascript" src="../public/js/menu.js"></script>
     </body>
 </html>
