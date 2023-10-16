@@ -162,6 +162,11 @@ header {
     margin-top: 35px;
 }
 
+#logo-card-bookmanager {
+    height: 4vh;
+    margin-top: 30px;
+}
+
 .card figure img {
     height: 10.5vh;
     margin-bottom: 20px;
@@ -196,7 +201,7 @@ header {
 
 .card-projeto {
     display: grid;
-    grid-template-columns: 335px 335px;
+    grid-template-columns: 335px 335px 335px;
     justify-content: space-around;
     margin-top: 60px;
 }
